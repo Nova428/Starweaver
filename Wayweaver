@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Routine Blueprint</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel form-panel">
+        <div class="header-row">
+          <div>
+            <p class="eyebrow">Client Portal</p>
+            <h1>Daily Routine Blueprint</h1>
+          </div>
+          <span class="client-pill">Signed in as Alex</span>
+        </div>
+
+        <form id="routineForm">
+          <div class="field-group">
+            <label for="role">Client Type</label>
+            <div class="option-grid" id="roleOptions">
+              <label><input type="radio" name="role" value="Student" /> Student</label>
+              <label><input type="radio" name="role" value="Entrepreneur" /> Entrepreneur</label>
+              <label><input type="radio" name="role" value="Employee" /> Employee</label>
+              <label><input type="radio" name="role" value="Homemaker" /> Homemaker</label>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="goals">Primary Goals</label>
+            <textarea id="goals" name="goals" rows="4" placeholder="What would you like to achieve each day?"></textarea>
+          </div>
+
+          <div class="field-group">
+            <label for="problem">Problem Stopping Them</label>
+            <textarea id="problem" name="problem" rows="4" placeholder="What is getting in the way of your routine?"></textarea>
+          </div>
+
+          <button type="submit">Generate Blueprint</button>
+        </form>
+      </section>
+
+      <section class="panel result-panel">
+        <h2>Your Blueprint</h2>
+        <div id="resultCard" class="result-card">
+          <p class="placeholder-text">Fill out the form to create your routine plan.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
